@@ -11,7 +11,9 @@ data, once per cone half-angle and scaled to the nose radius, and five ensemble
 members run on the processor. The app reports the flow field, a verdict of
 trust, warn or refuse from the ensemble spread and the distance to the training
 box, and two analytical cross-checks (Billig shock standoff, Fay-Riddell
-stagnation heat flux).
+stagnation heat flux). It times each prediction against the SU2 wall time of
+the nearest solved case, and maps the physics-attention slices that one
+member learned against the freestream, shock layer and near-wall regions.
 
 This is a research demonstration, not a certified engineering tool.
 
